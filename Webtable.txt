@@ -1,0 +1,82 @@
+<!Do<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student details</title>
+    </head>
+    <body>
+        <h1> K7IT Student details</h1>
+        <style>
+            table, th, td {
+                    border: 1px solid black;
+                  }
+        </style>
+        <table name="student Details">
+
+            <tr>
+                
+                <th>Student Id</th>
+                <th>Student Name</th>
+                <th>Course</th>
+                <th>Address</th>
+                <th>EmailId</th>
+                <th>Phone</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>001</td>
+                <td>Aruna</td>
+                <td>Full Stack Developer</td>
+                <td>VJ</td>
+                <td>aruna@gmail.com</td>
+                <td>8998392938</td>
+             <td>
+                    <td1><button class="view" id="view"> <img src="C:\Users\Likith\Downloads\view.png" width="10" length="10"/> </button></td1>
+                    <td2><button class="edit" id="edit"> <img src="C:\Users\Likith\Downloads\edit.png" width="10" length="10"/> </button></td2>
+                    <td3><button class="delete" id="delete"> <img src="C:\Users\Likith\Downloads\delete.png" width="10" length="10"/> </button></td3>
+	         </td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Anu</td>
+                <td>Full Stack Developer</td>
+                <td>Gulbaig</td>
+                <td>anu@gmail.com</td>
+                <td>8998392938</td>
+                 <td>
+                        <td1><button class="view" id="view"> <img src="C:\Users\Likith\Downloads\view.png" width="10" length="10"/> </button></td1>
+                        <td2><button class="edit" id="edit"> <img src="C:\Users\Likith\Downloads\edit.png" width="10" length="10"/> </button></td2>
+                        <td3><button class="delete" id="delete"> <img src="C:\Users\Likith\Downloads\delete.png" width="10" length="10"/> </button></td3>
+	             </td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>Babu</td>
+                <td>Full Stack Developer</td>
+                <td>Prakasam District</td>
+                <td>babu@gmail.com</td>
+                <td>8998392038</td>
+<td>
+                <td1><button class="view" id="view"> <img src="C:\Users\Likith\Downloads\view.png" width="10" length="10"/> </button></td1>
+                <td2><button class="edit" id="edit"> <img src="C:\Users\Likith\Downloads\edit.png" width="10" length="10"/> </button></td2>
+                <td3><button class="delete" id="delete"> <img src="C:\Users\Likith\Downloads\delete.png" width="10" length="10"/> </button></td3>
+</td>
+            </tr>
+            <tr>
+                <td>004</td>
+                <td>Deepya</td>
+                <td>Full Stack Developer</td>
+                <td>chittoor</td>
+                <td>deepya@gmail.com</td>
+                <td>8999392038</td>
+<td>
+    <td1><button class="view" id="view"> <img src="C:\Users\Likith\Downloads\view.png" width="10" length="10"/> </button></td1>
+    <td2><button class="edit" id="edit"> <img src="C:\Users\Likith\Downloads\edit.png" width="10" length="10"/> </button></td2>
+    <td3><button class="delete" id="delete"> <img src="C:\Users\Likith\Downloads\delete.png" width="10" length="10"/> </button></td3>
+
+</td>
+         
+    </td>
+    
+        </table>
+    </body>
+</html>
