@@ -47,6 +47,8 @@
                         <td2><button class="edit" id="edit"> <img src="C:\Users\Likith\Downloads\edit.png" width="10" length="10"/> </button></td2>
                         <td3><button class="delete" id="delete"> <img src="C:\Users\Likith\Downloads\delete.png" width="10" length="10"/> </button></td3>
 	             </td>
+
+                 
             </tr>
             <tr>
                 <td>003</td>
@@ -80,3 +82,6 @@
         </table>
     </body>
 </html>
+
+
+
