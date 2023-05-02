@@ -1,0 +1,93 @@
+<!Do<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student details</title>
+    </head>
+    <body>
+        <h1> K7IT Student details</h1>
+        <style>
+            table, th, td {
+                    border: 1px solid black;
+                  }
+        </style>
+        <table name="student Details">
+
+            <tr>
+                
+                <th>Student Id</th>
+                <th>Student Name</th>
+                <th>Course</th>
+                <th>Address</th>
+                <th>EmailId</th>
+                <th>Phone</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>001</td>
+                <td>Aruna</td>
+                <td>Full Stack Developer</td>
+                <td>VJ</td>
+                <td>aruna@gmail.com</td>
+                <td>8998392938</td>
+             <td>
+   <td1>view</td1>
+                <td2>update</td2>
+                <td3>delete</td3>
+	<td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Anu</td>
+                <td>Full Stack Developer</td>
+                <td>Gulbaig</td>
+                <td>anu@gmail.com</td>
+                <td>8998392938</td>
+                 <td>
+   		<td1>view</td1>
+                		<td2>update</td2>
+                		<td3>delete</td3>
+	<td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>Babu</td>
+                <td>Full Stack Developer</td>
+                <td>Prakasam District</td>
+                <td>babu@gmail.com</td>
+                <td>8998392038</td>
+<td>
+   <td1>view</td1>
+                <td2>update</td2>
+                <td3>delete</td3>
+<td>
+            </tr>
+            <tr>
+                <td>004</td>
+                <td>Deepya</td>
+                <td>Full Stack Developer</td>
+                <td>chittoor</td>
+                <td>deepya@gmail.com</td>
+                <td>8999392038</td>
+<td>
+                <td1>view</td1>
+                <td2>update</td2>
+                <td3>delete</td3>
+<td>
+            </tr>
+            <td>
+            <tr>
+            <th>view</th>
+            <th>update</th>
+            <th>delete</th>
+        </tr>
+    </td>
+    <td>
+        <tr>
+            <th>
+
+            </th>
+        </tr>
+    </td>
+        </table>
+    </body>
+</html>
