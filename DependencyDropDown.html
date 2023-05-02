@@ -1,0 +1,58 @@
+<center>
+<h1> Dependency Drop Down<h1>
+<form name="myform">
+
+State:   <select name="state" onchange="populateDistricts()">
+	         <option value="0">Select State</option>
+	         <option value="ap">Andhrapradesh</option>
+             <option value="ka">Karnataka</option>
+  </select>
+  
+  
+<div id="district">
+District:<select name="district" onclick="checkStateSelected()">
+        <option value="0">Select District</option>
+    </select>
+</div>
+   
+   
+   <div id="ap" style="visibility:hidden">
+District:<select name="district" onclick="checkStateSelected()">
+        <option value="0">Select District</option>
+		<option value="ctr">Chittoor</option>
+        <option value="tpt">Tirupathi</option>
+</select>
+</div>
+
+<div id="ka" style="visibility:hidden">
+District:<select name="district" onclick="checkStateSelected()">
+        <option value="0">Select District</option>
+		<option value="blr">Bangalore</option>
+        <option value="klr">Kolar</option>
+</select>
+</div>
+
+<div id=<"0" style="visibility:hidden">
+District:<select name="district" onclick="checkStateSelected()">
+        <option value="0">Select District</option>
+    </select>
+</div>
+
+</form>
+</centre>
+<script>
+ function populateDistricts(){
+      var state = document.myform.state;
+	  var districtDiv = document.getElementById("district");
+	  districtDiv.innerHTML = document.getElementById(state.value).innerHTML;
+	  }
+	   function checkStateSelected(){
+	   
+	     var state = document.myform.state;
+		 if(state.value==0){
+		   alert("ARE YOU SURE ABOUT THAT!!!!!!!!!!  FIRST SELECT THE STATE");
+		   }
+		   }
+		   </script>
+
+
