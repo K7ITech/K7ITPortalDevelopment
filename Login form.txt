@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Welcome K7IT</title>
+</head>
+<style>
+    body{
+        background-repeat : no-repeat;
+        background-size: 100% ;
+        background-attachment: fixed;
+    }
+</style>    
+<body background="C:\Users\Dell\Downloads\BG.jpg ">
+    <img src="C:\Users\Dell\Downloads\logo.png" width="200" length="200"/>
+<center>
+<h1><b> Welcome K7IT </b></h1>
+<label>
+
+    <font color="red"  fontfamily="calibri" size="5">
+        Username:
+    </font> 
+</label>
+<input type=text class="username" id="username" placeholder="please enter the username" /><br><br>
+<label> Password: </label>
+<input type=Password class="password" id="password" placeholder= "please enter the password" /><br><br>
+<input type="checkbox" />
+I accept my terms and condition given above<br><br>
+<button class="submit" id="submit"> login</button>
+
+<a href="D:\HtmlPractice\RegistrationForm.html" />
+<button type="button"> SignUp </button><br>
+<a href="forgotPassword.html"> Forgot Password</a>
+</center>
+</body>
+</html>
