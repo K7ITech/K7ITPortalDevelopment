@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <Title >GowthamGiri</Title>
+        <link rel="icon" type="image/x-icon" href="https://cdn1.vectorstock.com/i/1000x1000/57/50/letter-g-logo-flat-icon-style-vector-4925750.jpg">
+
+    <center>
+        <h1 style="background-color: rgb(161, 188, 238); border-radius: 70px;"> Welcome to K7IT Regristration Form </h1>
+    </center>
+
+</head><br>
+<!--  
+<header>
+    <div style="text-align-last: right;">
+        <button style="background-color:rgb(135, 173, 245);" type="back" onclick="Back()"><b> << Back
+        </b></button>
+        <button type="button" value="<< Back" onclick="Back()" style="background-color: rgb(135, 173, 245);">
+
+    </div>
+
+</header>
+
+-->
+
+<!-- <nav class="back">
+    <a href="file:///D:/Java%20Training%20Class/HTML/K7iT%20Home%20Page.html" style="text-align: right;">
+        <button class="back">Back</button></a>
+</nav> -->
+
+<nag class="menu" >
+    <a href="Home.html">Home</a>
+    <a href="Events.html">Events</a>
+    <a href="CourseDetails.html">Courses</a>
+    <a href="Training.html">Training</a>
+    <a href="JobPortal.html">Job Portal</a>
+    <a href="StudentList.html">Student List</a>
+
+
+    <div class="menu-log">
+        <a href="Login.html">Log In</a>
+    </div>
+</nag><br>
+
+<header><center>
+    <h2> <u> Student Registration Form </u></h2>
+</center>
+</header>
+
+<script>
+    // function Back() {
+    //     window.open("file:///D:/Java%20Training%20Class/HTML/Page%20Layout.html");
+    // }
+
+    // function Register() {
+    //     window.open("file:///D:/Java%20Training%20Class/HTML/Page%20Layout.html");
+    // }
+
+    // function Register() {
+    //   var popup = document.getElementById("myPopup");
+    //   popup.classList.toggle("show");
+    // }
+
+    // function Reset() {
+    //     window.open("Register.html");
+    // }
+
+    var loadFile = function (event) {
+        var image = document.getElementById('output');
+        image.src = URL.createObjectURL(event.target.files[0]);
+    };
+
+    function myFunction() {
+        alert("Registration Completed Successfully");
+    }
+
+</script>
+
+<body>
+
+    <style>
+        .menu a {
+            
+            text-align: left;
+            color: #e41919;
+            text-decoration: none;
+            font-size: 23px;
+            padding: 0px 14px 0px 14px;
+            
+        }
+
+        .menu-log  {
+            text-align: right;
+            color: #e41919;
+
+
+        }
+
+          /* .back {
+            text-align: center;
+            background-color: black;
+            color: white;
+            width: 75px;
+            height: 25px;
+            border-radius: 70px; */
+
+         
+        
+
+        body {
+            background-image: url("https://www.k7itech.com/assets/img/counts-img.svg");
+            /* url("https://wallpaperaccess.com/full/3016822.jpg"); */
+
+            background-size: cover;
+            /* background-repeat: no-repeat; */
+            /* background-size: 117% 105%; */
+            background-attachment: fixed;
+        }
+
+        .imageOutput {
+
+            position: absolute;
+            right: 0;
+            width: 200px;
+            height: 250px;
+            border: 1px solid black;
+
+        }
+    </style>
+
+    <form action="/action_page.php" action="/submit-form" method="POST" onsubmit="myFunction()">
+        <div style="text-align: left; width: 65%; height: 950px; float:left;" class="one">
+
+            <h3>
+                <table align="right" cellpadding="10">
+
+                    <tr>
+                        <td> First Name: </td>
+                        <td><input type="text" class="FirstName" maxlength="30" required />
+                            <!-- (max 30 characters a-z and A-Z) -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Last Name: </td>
+                        <td><input type="text" class="LastName" maxlength="30" required />
+                            <!-- (max 30 characters a-z and A-Z) -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Father Name: </td>
+                        <td><input type="text" class="FatherName" maxlength="30" required />
+                            <!-- (max 30 characters a-z and A-Z) -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Date of Birth:</td>
+                        <td><input type="date" required /></td>
+                    </tr>
+
+                    <tr>
+                        <td>Gender:</td>
+                        <td><input type="radio" id="Male" name="Gender" value="Male" />
+                            <label for="Male">Male</label>
+                            <input type="radio" id="Female" name="Gender" value="Female" />
+                            <label for="Female">Female</label>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Phone no:</td>
+                        <td><select>
+                                <option>+91</option>
+                                <option>+1</option>
+                                <option>+44</option>
+                                <option>+86</option>
+                                <option>+61</option>
+                                <option>+7</option>
+                            </select>
+                            <input type="tel" name="PhoneNumner" maxlength="10" required />
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>Qualification:</td>
+                        <td><select required>
+                                <option> select </option>
+                                <option> B.com </option>
+                                <option> B.Sc </option>
+                                <option> BCA </option>
+                                <option> BTech </option>
+                                <option> M.Sc </option>
+                                <option> MBA </option>
+                                <option> MTech </option>
+
+                            </select></td>
+                    </tr>
+
+                    <tr>
+                        <td>Stream:</td>
+                        <td><select required>
+                                <option> select </option>
+                                <option> Electrical engineering </option>
+                                <option> Mechanical Engineering </option>
+                                <option> Civil Engineering </option>
+                                <option> Computer Science and Engineering </option>
+                                <option> Computer Science & Statistics </option>
+                                <option> Computer Science & Electronics </option>
+                                <option> Business Economics </option>
+                                <option> Accounting & Finance </option>
+                                <option> Banking & Insurance </option>
+                                <option> Marketing & Management </option>
+
+                            </select></td>
+                    </tr>
+
+                    <tr>
+                        <td> College Name: </td>
+                        <td><input type="text" class="CollegeName" maxlength="30" required />
+                            <!-- (max 30 characters a-z and A-Z) -->
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Passed Out:</td>
+                        <td><select required>
+                                <option> select </option>
+                                <option> 2013 </option>
+                                <option> 2014 </option>
+                                <option> 2015 </option>
+                                <option> 2016 </option>
+                                <option> 2017 </option>
+                                <option> 2018 </option>
+                                <option> 2019 </option>
+                                <option> 2021 </option>
+                                <option> 2022 </option>
+
+                            </select></td>
+                    </tr>
+
+                    <tr>
+                        <td>Address:</td>
+                        <td><textarea style="width: 250px; height: 110px;" rows="5" col="50" value="address"
+                                required> </textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>City:</td>
+                        <td><input type="text" name="City" maxlength="30" required /></td>
+                    </tr>
+
+                    <tr>
+                        <td>Pincode:</td>
+                        <td><input type="number" name="Pincode" maxlength="6" required />
+                            <!-- (6 digit number) -->
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>State:</td>
+                        <td><select>
+                                <option>Andhra Pradesh</option>
+                                <option>Karnataka</option>
+                                <option>Maharashtra</option>
+                                <option>Karnataka</option>
+                                <option>Tamil Nadu </option>
+                                <option>Kerala </option>
+                            </select></td>
+                    </tr>
+
+                    <!-- <tr>
+                        <td>Country:</td>
+                        <td><input type="text" name="Country" value="India" required /></td>
+                    </tr> -->
+
+                    <tr>
+                        <td>Email Id:</td>
+                        <td><input type="email" id="email" name="email" required /></td>
+                    </tr>
+
+                    <tr>
+                        <td>Password:</td>
+                        <td><input type="password" id="password" name="password" maxlength="30" required />
+                            <!-- (max 30 characters with atleast one a-z, A-Z, 
+                    0-9 & special character) -->
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Confirm Password:</td>
+                        <td><input type="password" id="password" name="password" required /></td>
+                    </tr>
+
+                    <tr>
+                        <td>Resume:</td>
+                        <td><input type="file" required /></td>
+                    </tr>
+                </table>
+            </h3>
+
+        </div>
+
+        <!-- <div class="popup" onclick="Done()"> <button> Done </button>
+          <span class="popuptext" id="myPopup">Registered Successfully </span>
+        </div>   -->
+
+        <div style="text-align: right; width:35%; height: 950px; float:left;" class="two">
+            <h3>
+                <p><label>Photo: </label>
+                    <button><label for="file" style="cursor: pointer; background-color: white;">Upload</label></button>
+                </p>
+
+                <p>
+                    <input type="file" accept="image/*" name="image" id="file" required onchange="loadFile(event)"
+                        style="display: none; ">
+                </p>
+                <div class="imageOutput" style="text-align:center;">
+                    <p> <img id="output" width="170" /></p>
+                </div>
+                <!-- <p><img src="K7IT Logo.png" width="400"/></p> -->
+            </h3>
+        </div>
+        <footer>
+            <div style="text-align: center;">
+
+                <input type="submit" value="Register" style="background-color:rgb(248, 249, 250);">
+                <button style="background-color: rgb(248, 249, 250);" type="reset" value="Reset">
+                    <b> Reset </b>
+                </button>
+
+            </div>
+        </footer>
+
+    </form>
+
+
+
+    <!-- <div style="text-align: center; width: 100%; height: 650px;" class="three">
+
+        <center>
+            <!-- <button style="background-color:rgb(248, 249, 250);" type="submit"  onclick="Register()"><b> Register
+                </b></button> -->
+    <!-- <button style="background-color: rgb(248, 249, 250);;" type="reset" onclick="Reset()"><b> Reset
+                </b></button> -->
+    </center>
+    </div>
+
+
+    <center>
+        <h4><a>-- GowthamGiri --</a></h4>
+    </center>
+
+
+</body>
+
+</html>

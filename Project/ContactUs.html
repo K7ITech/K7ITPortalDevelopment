@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <style>
+
+      body{
+        background-image: url("https://img.freepik.com/free-photo/transparent-vivid-autumn-leaves_23-2148239689.jpg?w=1380&t=st=1683485732~exp=1683486332~hmac=45034343c6e4cf17e3742e720daac00fc778701a35ca40c7ef156382c2a5a59f ");
+        background-repeat: no-repeat;
+      /* background-size: 100%; */
+      background-attachment: fixed;
+      /* background-position-x: center; */
+      }
+        .font{
+            font-size: 30px;
+            color: aliceblue;
+
+        }
+    
+        .row:after {    
+  content: "";    
+  display: table;    
+  clear: both;    
+} 
+
+
+.star-rating{   
+
+  margin: 25px 0 0px;
+  font-size: 0;
+  white-space: nowrap;
+  display: inline-block;
+  width: 175px;
+  height: 35px;
+  overflow: hidden;
+  position: relative;
+  background: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjREREREREIiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=');
+  background-size: contain;
+} 
+
+.checked {
+  color: orange;
+} 
+.star-rating {
+    margin: 25px 0 0px;
+    font-size: 0;
+    white-space: nowrap;
+    display: inline-block;
+    width: 175px;
+    height: 35px;
+    overflow: hidden;
+    position: relative;
+    background: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjREREREREIiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=');
+    background-size: contain;
+  }
+  .star-rating i {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 20%;
+    z-index: 1;
+    background: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjRkZERjg4IiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=');
+    background-size: contain;
+  }
+              
+  .star-rating input {
+   
+    opacity: 0;
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+    position: relative;
+  }
+              
+  .star-rating input:hover + i,
+  .star-rating input:checked + i {
+    opacity: 1;
+  }
+  .star-rating i ~ i {
+    width: 40%;
+  }
+  .star-rating i ~ i ~ i {
+    width: 60%;
+  }
+  .star-rating i ~ i ~ i ~ i {
+    width: 80%;
+  }
+  .star-rating i ~ i ~ i ~ i ~ i {
+    width: 100%;
+  } 
+  .submit {
+        text-align:center;
+        font-family:arial;
+        background-color:black;
+        color:aliceblue;
+        width:90px;
+        border-radius:15px;
+        margin:50px;
+        font-size: 20px;
+    }
+   
+    .fa {
+  padding: 10px;
+  font-size: 15px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.font{
+  color: aliceblue;
+}
+.row {
+  color: aliceblue;
+  font-size: 25px;
+}
+
+
+    </style>
+ 
+</head>
+<body>
+    <main>
+        <section>
+            <div>
+                <center>
+                    <section id="contact" class="contact">
+                        <div class="container">
+                  
+                          <div class="section-title" data-aos="fade-up">
+                    <h1 class="font">--CONTACT US--</h1>
+                </center>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="contact-about">
+                    <h3 class="font">K7 Infotech</h3>
+                    <p class="font">Please call us or email to us for any queries<br> and our team at K7 Infotech will evaluate your<br> queries and revert back appropriately</p> 
+                    
+                    
+                    
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-facebook"></a> 
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a> 
+                                   
+                                    <center>
+                                        <h1 class="font">--Address-- </h1>
+                                      <div>
+                                        <i class="ri-map-pin-line"></i>
+                                        <p class="font">#17,LV Nilayam,  <br>3rd cross, Jayanthi Nagar Ext,<br> Horamavu,  Bangalore<br> Pin code -560043</p>
+                                       <p class="font"> info@k7itech.com</p>
+                                    
+                                <i class="ri-phone-line"></i>
+                                <p class="font">+91 8978483328, 8904106042</p>
+                              </div>
+
+                            </center>
+                             
+                              <div style="text-align: right;" class="Maps">
+
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.1200648894383!2d77.66358711174215!3d13.028025365752226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1125f9ad3f77%3A0xc2244da171e4501e!2sDying%20Seed%20Ministries!5e0!3m2!1sen!2sin!4v1670879855599!5m2!1sen!2sin" width="400" height="300" style="text-align: right;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                
+                                     </div>
+                                    
+                              </div>
+                                           
+        </section>                    
+
+        <form>
+           <CENTER>
+            <h2 class="font">--Feed back--</h2>
+           </CENTER> 
+       <div class="font">
+        <label> First Name </label>
+        <input type=text class="fname"placeholder="entre your firstname"/><br><br>
+        <label>Last Name</label> 
+        <input type=text class="lname"placeholder="entreyour lastname"/><br><br>
+        <label>Father Name</label>
+        <input type=text class="fathername"placeholder="enter your fathername"/><br><br>
+        <label>Gendre:</label>
+        <input type=radio>Femal</radio>
+        <input type=radio>Male</radio><br><br>
+        <label> Course:</label>
+        <select>
+        <option>course</option>
+        <option>bsc</option>
+        <option>bcom</option>
+        <option>bba</option>
+        <option>mba</option>
+        <option>mca</option>
+        </select>
+        <br><br>
+        <label>Email</label>
+        <input type=text id=email placeholder="please enteryour email"/><br><br>
+        <label>Phone No</label>
+        
+        <input type="text"value="+91"  size="2" name ="country code" border-radius: 0px;    
+        />
+        
+        <input type="text"name="phone" size="10"/><br><br>
+        <label>Address:</label><br>
+        <input type="address"class="address"size="50"; style="height:100px; width: 400px; "/><br><br>
+      </div>
+
+    </div>    
+    <div class="row" >       
+        <label for="country">Country:</label>    
+      </div>
+      <div class="col-75" style="height:50px;width: 100px;">    
+        <select id="country" name="country">    
+        <option value="none">Select Country</option>    
+        <option value="australia">Australia</option>    
+        <option value="canada">Canada</option>    
+        <option value="usa">USA</option>    
+        <option value="russia">Russia</option>    
+        <option value="japan">Japan</option>    
+        <option value="india">India</option>    
+        <option value="china">China</option>    
+      </select>    
+    </div>    
+  </div> 
+
+        <div class="row">    
+            <div class="col-25">    
+              <label for="feed_back">Share your feedback:</label>    
+            </div>    
+            <div class="col-75">    
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height: 150px; width: 400px;" ></textarea>    
+            </div> 
+            <div class="row">   
+                <span class="star-rating">
+                  <input type="radio" name="rating1" value="1"><i></i>
+                  <input type="radio" name="rating1" value="2"><i></i>
+                  <input type="radio" name="rating1" value="3"><i></i>
+                  <input type="radio" name="rating1" value="4"><i></i>
+                  <input type="radio" name="rating1" value="5"><i></i>
+                </span>
+    </form>
+        <a href="D:\Users\lovely\HTML\JavaScript/Registration form.html"/>                          
+         <center>
+        <button class = "submit" onclick="display('sectionpropage')" > Submit </button>
+        </div>
+    </div>
+        </center>
+        </html> 
+    </main>
+</body>
+</html>

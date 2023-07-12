@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!---Coding By CodingLab | www.codinglabweb.com--->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Registration Form in HTML CSS</title>
+    <!---Custom CSS File--->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section class="container">
+      <header>Find a job than can help your career</header>
+      <form action="#" class="form">
+        <div class="input-box">
+          <label>Full Name</label>
+          <input type="text" placeholder="What is your Full Name?" required />
+        </div>
+
+        
+        <div class="input-box">
+            <label>Date Of Birth</label>
+            <input type="date" placeholder="Enter Your Date Of Birth" required />
+          </div>
+
+        <div class="input-box">
+          <label>Email ID</label>
+          <input type="text" placeholder="Let us know your Email ID" required />
+        </div>
+
+        
+        <div class="input-box">
+            <label>Password</label>
+            <input type="password" placeholder="Create a Password for your account" required />
+          </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>Phone Number</label>
+            <input type="tel" name="PhoneNumner" size="10" placeholder="Enter phone number" required /> 
+          </div>         
+        </div>
+
+
+        <div class="gender-box">
+          <h3>Gender</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="gender" checked />
+              <label for="check-male">male</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="gender" />
+              <label for="check-female">Female</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-other" name="gender" />
+              <label for="check-other">prefer not to say</label>
+            </div>
+          </div>
+        </div>
+        <br>
+
+        <div class="Work Status-box">
+            <h4>Work Status</h4>
+            <div class="Work Status-option">
+              <div class="Work Status">
+                <input type="radio" id="check-Experienced" name="Work Status" checked />
+                <label for="check-Experienced">Experienced</label>
+              </div>
+              <div class="Work Status">
+                <input type="radio" id="check-Fresher" name="Work Status" />
+                <label for="check-Fresher">Fresher</label>
+              </div>
+            </div>
+          </div>
+
+
+          
+        <div class="input-box">
+            <label>Resume</label>
+            <input type="file" placeholder="Resume" id="Resume" name="filename" required />
+          </div>
+        
+          <div class="input-box address">
+         
+          <div class="column">
+            <div class="select-box">
+              <select>
+                <option hidden>Country</option>
+                <option>America</option>
+                <option>Japan</option>
+                <option>India</option>
+                <option>Nepal</option>
+              </select><br></br>
+            </div><br></br>
+            <input type="text" placeholder="Enter your city" required />
+          </div>
+          <div class="column">
+          
+            <br></br>
+            <input type="number" placeholder="Enter postal code" required /><br></br>
+          </div>
+        
+       
+
+        <input type="button" value="SignUp" onclick="SignUp()";>
+
+
+        <script>
+            function SignUp() {
+                window.open("file:///C:/Users/Likith/Downloads/project/Homepage.html");
+            }
+
+        </script>
+
+      </form>
+    </section>
+  </body>
+</html>

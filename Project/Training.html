@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: hsl(0, 0%, 7%);
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidebar .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #111;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+        }
+
+        .openbtn:hover {
+            background-color: #444;
+        }
+
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidebar {
+                padding-top: 15px;
+            }
+
+            .sidebar a {
+                font-size: 18px;
+            }
+        }
+
+        .container {
+            font-size: 20px;
+            color: #1b1a1b;
+
+        }
+
+        .feed {
+            color: rgb(255, 0, 0);
+            background-color: deepskyblue;
+            background-image: url("https://res.cloudinary.com/dzl2afjyu/image/upload/v1683098782/01-29-19-Employee-Feedback_yhjoj2.jpg");
+        }
+
+        .Feed {
+            color: rgb(255, 0, 0);
+            background-color: deepskyblue;
+            background-image: url("https://res.cloudinary.com/dzl2afjyu/image/upload/v1683098782/01-29-19-Employee-Feedback_yhjoj2.jpg");
+        }
+
+        .img {
+            border-radius: 8px;
+        }
+
+        .back {
+            text-align: center;
+            /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+            background-color: black;
+            color: white;
+            width: 75px;
+            height: 25px;
+            border-radius: 70px;
+            /* margin:50px; */
+
+        }
+    </style>
+</head>
+
+<!-- <nav class="back">
+    <a href="Home.html" style="text-align: right;">
+        <button class="back">Back</button></a>
+</nav> -->
+
+<body>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="Home.html">Home</a>
+        <a href="CourseDetails.html">Course Details</a>
+        <a href="StudentList.html">Student List</a>
+        <a href="JobPortal.html">Job Board</a>
+        <a href="Events.html">Events</a>
+        <a href="ContactUs.html">Contact Us</a>
+
+    </div>
+    <div>
+        <a href="#" class="fab fa-facbook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+    </div>
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">☰ More</button>
+        <div class="favourite-place-card-container d-flex flex-row"
+            onclick="openNav('sectionTrainingProgramsDetailedView')">
+            <div>
+                <center>
+                    <!-- <h1 class="container">K7Infotech......@</h1> -->
+            </div>
+            <div class="row" style="text-align: center;">
+                <div class="column">
+                    <img src="http://www.k7itech.com/assets/img/hero-img.png " style="width:20%">
+
+                    </center>
+                </div>
+            </div>
+
+            </section>
+            <main id="main">
+                <section id="TrainingPrograms" class="TrainingPrograms">
+                    <div class="container">
+
+                        <div class="section-title" data-aos="fade-up">
+                            <center>
+                                <h2 class="size">-------TrainingPrograms------</h2><br>
+                            </center>
+
+                            <body>
+                                <p>
+
+                                <h1 class="babe"> Our top notch teams involved in helping you learn programming, not
+                                    just coding...
+                                </h1>
+
+                                <img src="https://res.cloudinary.com/dzl2afjyu/image/upload/v1683458135/IMG_20230504_164351_64_wxg9eg.jpg "
+                                    alt="Paris" width="150" height="150">
+
+                                <p class="ammu">K7 Infotech in Bangalore helps you master various aspects such as Manual
+                                    testing,
+                                    Automation testing, Java Developer course, Java fullstack developer course which
+                                    covers the below
+                                    technologies: <br><br>
+                                    Java,Databases like Mysql, Oracle, MongoDB, JDBC, Hibernate, Servlet, JSP, Spring,
+                                    Spring boot,
+                                    Microservicecs, spring cloud, spring JWT Security, Spring Cache control , Spring
+                                    JPA. Spring Mockito
+                                    Unit testing, Junits, log4J, Git hub , maven, gradle, eclipse, intelij, STS,
+                                    Realtime projects etc .
+                                </p>
+
+                                <h1>Dhanya Automation testing:</h1>
+
+                                <h1>Thulasi Manual Testing: </h1>
+
+                                <img src="https://res.cloudinary.com/dzl2afjyu/image/upload/v1683268172/IMG_20230505_115718_65_ywxgly.jpg"
+                                    alt="Paris" width="150" height="150">
+
+
+
+
+                        </div>
+                    </div>
+
+        </div>
+
+        <h2>-------Events------</h2>
+
+
+        <p>
+
+    </div>
+    </div>
+
+    </div>
+    </section>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+
+</body>
+
+</html>
